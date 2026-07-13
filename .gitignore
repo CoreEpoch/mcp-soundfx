@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated audio (outputs belong to whoever generates them, not the repo)
+*.wav
+*.flac
+*.mp3
+
+# Local environment
+.env

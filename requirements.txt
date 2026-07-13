@@ -1,0 +1,16 @@
+# Core MCP server.
+# Capped below 2.0: the v2 SDK (released 2026-07-28 for the MCP 2026-07-28
+# spec) renames FastMCP to MCPServer and moves it to mcp.server.mcpserver, so
+# an unbounded pin resolves to a release this server cannot import.
+mcp>=1.9,<2
+
+# Stable Audio Open 1.0 inference stack
+# NOTE: install a CUDA build of torch first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.5
+diffusers>=0.30
+transformers>=4.44
+accelerate>=1.0
+torchsde>=0.2.6
+soundfile>=0.12
+huggingface_hub>=0.24
